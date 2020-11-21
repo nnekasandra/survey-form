@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@200&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(images/background1.jpeg);
+    background-color: #7d0e79;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Heebo', sans-serif;
+    font-size: 20px;
+    color: #e890e2;
+
+}
+div.form{
+    margin: auto;
+    width: 50%;
+    background-color: #d93bb1;
+    padding: 30px;
+}
+h1,h2,#description{
+    text-align: center;
+    color: #cd2cc0;
+    text-shadow: 2px 3px 4px #6d117d;
+    padding: 10px;
+}
+input[type=text]{
+    border: none;
+    border-radius: 6px;
+    height: 50px;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 1rem;
+    color: #e890e2;
+    background-color: #cd2cc0;
+}
+input[type=email]{
+    border: none;
+    border-radius: 6px;
+    height: 50px;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 1rem;
+    color: #e890e2;
+    background-color: #cd2cc0;
+}
+input[type=number]{
+    border: 0;
+    border-radius: 6px;
+    height: 50px;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 1rem;
+    color: #e890e2;
+    background-color: #cd2cc0;
+}
+select{
+    border: none;
+    border-radius: 6px;
+    height: 50px;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 1rem;
+    color: #e890e2;
+    background-color: #cd2cc0;
+}
+.labels{
+    color: #951c76;
+    font-weight: bold;
+}
+button{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #951c76;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 2rem;
+    border-radius: 6px;
+    cursor: pointer;
+    box-shadow: 3px 4px 4px #6d117d;
+}
+textarea{
+    resize: none;
+    width: 100%;
+    background-color: #cd2cc0;
+    font-size: 1rem;
+}
+::placeholder{
+    color: #e890e2;
+}
+#others{
+    width: 50%;
+    height: 25px;
+}
+.rating,.reviews,.frequency{
+    padding: 10px;
+    margin: 10 0px;
+}
+input[type=radio]{
+    transform: scale(1.5);
+    padding: 10px;
+    margin: 10px 0;
+}
+input[type= checkbox]{
+    transform: scale(1.5);
+    padding: 10px;
+    margin: 10px 0;
+}
+@media only screen and (max-width: 768px){
+    body{
+    font-size: 15px;
+    }
+    div.form{
+    padding: 20px;
+    }
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Survey form</title>
+</head>
+<body>
+  <header>
+    <h1 id="title">Welcome to Infomercial</h1>
+    <h2>Get Any information at the snap of a Finger</h2>
+  </header>
+  <p id="description">Please help fill this form to improve our service</p>
+  <div class="form">
+    <form id="survey-form">
+      <label for="name" class="labels" id="name-label">Name</label> <br>
+      <input type="text" name="enter-name" id="name" placeholder="Enter Name" required>
+      <br><br>
+      <label for="email" class="labels" id="email-label">Email</label> <br>
+      <input type="email" name="enter-email" id="email" placeholder="Enter Email" required>
+      <br><br>
+      <label for="age" class="labels" id="number-label">Age</label><br>
+      <input type="number" name="age" placeholder="Age" min="10" max="99" id="age">
+      <br> <br>
+      <label for="drop-down" class="labels" id="dropdown">Which of these titles currently describe what you do?</label>
+      <br>
+      <select class="titles" name="dropdown-title">
+        <option value="select">Select an Option</option>
+        <option value="student">Student</option>
+        <option value="working">Employee</option>
+        <option value="self-employed">Self Employed</option>
+        <option value="Unemployed">Unemployed</option>
+      </select>
+      <br>
+      <div class="frequency">
+        <p class="labels">How frequent do you use our platform ?</p>
+        <input type="radio" name="frequency" value="frequently" id="daily">
+        <label for="daily">Daily</label>
+        <br>
+        <input type="radio" name="frequency" value="Weekly" id="week">
+        <label for="week">Weekly</label>
+        <br>
+        <input type="radio" name="frequency" value="fortnightly" id="fortnight">
+        <label for="fortnight">fortnightly</label>
+        <br>
+        <input type="radio" name="frequency" value="Monthly" id="month">
+        <label for="month">Monthly</label>
+        <br>
+    </div>
+    <div class="reviews">
+      <p class="labels">Which Features on the platform that enhance your experience while using the platform. Please select all that apply</p>
+      <input type="checkbox" name="check" value="Easy Navigation">
+      <label for="navigate">Easy Navigation</label> <br>
+      <input type="checkbox" name="check" value="Reviews">
+      <label for="review">Review</label> <br>
+      <input type="checkbox" name="check" value="customer-service">
+      <label for="customer">Customer Service</label> <br>
+      <input type="checkbox" name="check" value="contents">
+      <label for="content">Contents</label> <br>
+      <input type="checkbox" name="check" value="engagements">
+      <label for="engagement">Engagements</label> <br>
+      <label for="others">Others:</label>
+      <input type="text" name="others" id="others">
+      <br>
+    </div>
+    <div class="rating">
+      <p class="labels">How would you Rate our Services?</p>
+      <input type="radio" name="rating" value="excellent" id="excellent">
+      <label for="excellent">Excellent</label><br>
+      <input type="radio" name="rating" value="average" id="average">
+      <label for="average">Average</label><br>
+      <input type="radio" name="rating" value="poor" id="poor">
+      <label for="poor">Poor</label>
+    </div>
+      <p class="labels">Any Feedback on how to improve your experience?</p>
+      <br>
+      <textarea name="feedback" rows="8" cols="80" placeholder="Enter Comment"></textarea>
+      <br> <br>
+      <button id="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
